@@ -11,15 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/library")
+@RequestMapping("/api/don-library")
 public class BookController {
+
+    public String hello() {
+        return String.format("Hello World");
+    }
 
     @Autowired
     private BookRepository bookRepository;
 
     @GetMapping
     public List<Book> getLibraryBooks() {
-
         return bookRepository.findAll();
     }
 }

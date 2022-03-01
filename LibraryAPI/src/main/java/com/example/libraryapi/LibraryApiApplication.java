@@ -15,8 +15,8 @@ public class LibraryApiApplication {
                 SpringApplication.run(LibraryApiApplication.class, args);
         BookRepository bookRepository =
         configurableApplicationContext.getBean(BookRepository.class);
-        Book myBook = new Book("Don Test Book","Don Kalu","TestGenre");
-        bookRepository.save(myBook);
+//        Book myBook = new Book("Don Test Book","Don Kalu","TestGenre");
+//        bookRepository.save(myBook);
     }
 
 }
